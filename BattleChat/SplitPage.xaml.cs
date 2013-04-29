@@ -186,5 +186,20 @@ namespace BattleChat
         }
 
         #endregion
+
+        /// <summary>
+        /// When the "Enter Game" button has been clicked, send the user to the BattleshipGame 
+        /// Game page. (Or whatever game is currently selected.
+        /// </summary>
+        /// <TODO>
+        /// Add a Game ID and a Game Type ID. 
+        /// </TODO>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void Enter_Game_Click(object sender, RoutedEventArgs e)
+        {
+           // var gameId = ((SampleDataItem)e.
+            this.Frame.Navigate(typeof(BattleshipGame)); // Include a game ID.
+        }
     }
 }

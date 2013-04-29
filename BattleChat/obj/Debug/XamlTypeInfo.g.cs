@@ -114,9 +114,11 @@ namespace BattleChat.BattleChat_XamlTypeInfo
 
         private object Activate_0_LayoutAwarePage() { return new global::BattleChat.Common.LayoutAwarePage(); }
 
-        private object Activate_1_ItemsPage() { return new global::BattleChat.ItemsPage(); }
+        private object Activate_1_BattleshipGame() { return new global::BattleChat.BattleshipGame(); }
 
-        private object Activate_2_SplitPage() { return new global::BattleChat.SplitPage(); }
+        private object Activate_2_ItemsPage() { return new global::BattleChat.ItemsPage(); }
+
+        private object Activate_3_SplitPage() { return new global::BattleChat.SplitPage(); }
 
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(string typeName)
@@ -140,15 +142,21 @@ namespace BattleChat.BattleChat_XamlTypeInfo
                 xamlType = userType;
                 break;
 
+            case "BattleChat.BattleshipGame":
+                userType = new global::BattleChat.BattleChat_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::BattleChat.BattleshipGame), GetXamlTypeByName("BattleChat.Common.LayoutAwarePage"));
+                userType.Activator = Activate_1_BattleshipGame;
+                xamlType = userType;
+                break;
+
             case "BattleChat.ItemsPage":
                 userType = new global::BattleChat.BattleChat_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::BattleChat.ItemsPage), GetXamlTypeByName("BattleChat.Common.LayoutAwarePage"));
-                userType.Activator = Activate_1_ItemsPage;
+                userType.Activator = Activate_2_ItemsPage;
                 xamlType = userType;
                 break;
 
             case "BattleChat.SplitPage":
                 userType = new global::BattleChat.BattleChat_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::BattleChat.SplitPage), GetXamlTypeByName("BattleChat.Common.LayoutAwarePage"));
-                userType.Activator = Activate_2_SplitPage;
+                userType.Activator = Activate_3_SplitPage;
                 xamlType = userType;
                 break;
 

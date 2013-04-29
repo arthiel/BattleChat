@@ -45,7 +45,7 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Button x:ConnectionId='2'
+            <Button x:ConnectionId='3'
                 x:Name="backButton"
                               
                 IsEnabled="{Binding DefaultViewModel.CanGoBack, ElementName=pageRoot}"
@@ -97,6 +97,7 @@
                 <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Margin="0,20,0,0" Text="{Binding Content}" Style="{StaticResource BodyTextStyle}"/>
             </Grid>
         </ScrollViewer>
+        <Button x:ConnectionId='2' Content="Enter Game" Grid.Column="1" HorizontalAlignment="Left" Margin="268,130,0,0" VerticalAlignment="Top" Height="92" Grid.RowSpan="2" Width="229"                         />
 
         <VisualStateManager.VisualStateGroups>
 

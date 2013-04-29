@@ -6,6 +6,7 @@ Assets\SmallLogo.png
 Assets\SplashScreen.png
 Assets\StoreLogo.png
 App.xaml
+BattleshipGame.xaml
 Common\StandardStyles.xaml
 ItemsPage.xaml
 SplitPage.xaml

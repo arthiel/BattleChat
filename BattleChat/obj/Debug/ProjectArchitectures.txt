@@ -1,1 +1,1 @@
-C:\Users\Aaron\Desktop\Code\BattleChat\BattleChat\BattleChat.csproj;neutral
+C:\Users\arthiel42\Documents\Visual Studio 2012\Projects\BattleChat\BattleChat\BattleChat.csproj;neutral

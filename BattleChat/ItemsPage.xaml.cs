@@ -60,5 +60,6 @@ namespace BattleChat
             var groupId = ((SampleDataGroup)e.ClickedItem).UniqueId;
             this.Frame.Navigate(typeof(SplitPage), groupId);
         }
+
     }
 }
